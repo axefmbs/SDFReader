@@ -1,0 +1,329 @@
+# GUIBUILDER FILE Build 146
+# Created: 2009-07-27 14:49:32 by GUI Builder Build 146
+language tcl 8.4
+widget {Tk frame} f {
+	geometry min_column {47 65 33 71 2 40 217 55 2}
+	geometry min_row {188 2 2 2}
+	geometry pad_column {0 0 0 0 0 0 0 0 0}
+	geometry pad_row {0 0 0 0}
+	geometry resize_column {1 1 1 1 1 0 3 1 0}
+	geometry resize_row {3 0 1 1}
+	geometry weight_column {0 0 0 0 0 0 1 0 0}
+	geometry weight_row {1 0 0 0}
+	data GROUP Tk
+	data ID {}
+	data MASTER {}
+	data TYPE {Tk frame}
+	data level 0
+}
+widget {Tk button} _button_1 {
+	configure -text {<< Previous}
+	geometry -column 1
+	geometry -columnspan 1
+	geometry -row 3
+	geometry -rowspan 1
+	geometry -sticky nsew
+	geometry min_column {201 2}
+	geometry min_row {118 8}
+	geometry pad_column {0 0}
+	geometry pad_row {0 0}
+	geometry resize_column {2 0}
+	geometry resize_row {2 0}
+	geometry weight_column {1 0}
+	geometry weight_row {1 0}
+	data GROUP Tk
+	data ID _button_prev
+	data MASTER {}
+	data TYPE {Tk button}
+}
+widget {Tk button} _button_2 {
+	configure -text {Next >>}
+	geometry -column 2
+	geometry -columnspan 1
+	geometry -row 3
+	geometry -rowspan 1
+	geometry -sticky nsew
+	geometry min_column {201 2}
+	geometry min_row {118 8}
+	geometry pad_column {0 0}
+	geometry pad_row {0 0}
+	geometry resize_column {2 0}
+	geometry resize_row {2 0}
+	geometry weight_column {1 0}
+	geometry weight_row {1 0}
+	data GROUP Tk
+	data ID _button_next
+	data MASTER {}
+	data TYPE {Tk button}
+}
+widget {Tk label} _label_1 {
+	configure -anchor w
+	configure -borderwidth 1
+	configure -font {helvetica 8}
+	configure -justify left
+	configure -relief sunken
+	configure -text statusbar1
+	configure -textvariable SDF::status1
+	geometry -column 1
+	geometry -columnspan 5
+	geometry -row 4
+	geometry -rowspan 1
+	geometry -sticky nsew
+	geometry min_column {201 2}
+	geometry min_row {118 8}
+	geometry pad_column {0 0}
+	geometry pad_row {0 0}
+	geometry resize_column {2 0}
+	geometry resize_row {2 0}
+	geometry weight_column {1 0}
+	geometry weight_row {1 0}
+	data GROUP Tk
+	data ID _label_1
+	data MASTER {}
+	data TYPE {Tk label}
+}
+widget {Tk label} _label_2 {
+	configure -anchor e
+	configure -borderwidth 1
+	configure -font {helvetica 8}
+	configure -justify right
+	configure -relief sunken
+	configure -text {statusbar 2}
+	configure -textvariable SDF::status2
+	geometry -column 6
+	geometry -columnspan 4
+	geometry -row 4
+	geometry -rowspan 1
+	geometry -sticky nsew
+	geometry min_column {201 2}
+	geometry min_row {118 8}
+	geometry pad_column {0 0}
+	geometry pad_row {0 0}
+	geometry resize_column {2 0}
+	geometry resize_row {2 0}
+	geometry weight_column {1 0}
+	geometry weight_row {1 0}
+	data GROUP Tk
+	data ID _label_2
+	data MASTER {}
+	data TYPE {Tk label}
+}
+widget {Tk text} _text_2 {
+	configure -background #ffffff
+	configure -font {helvetica 9}
+	configure -height 0
+	configure -width 0
+	configure -wrap none
+	configure -xscrollcommand {< scroll .pw.crf.can.f._scrollbar_3 set >}
+	configure -yscrollcommand {< scroll .pw.crf.can.f._scrollbar_2 set >}
+	geometry -column 6
+	geometry -columnspan 3
+	geometry -row 1
+	geometry -rowspan 1
+	geometry -sticky news
+	geometry min_column {201 2}
+	geometry min_row {118 8}
+	geometry pad_column {0 0}
+	geometry pad_row {0 0}
+	geometry resize_column {2 0}
+	geometry resize_row {2 0}
+	geometry weight_column {1 0}
+	geometry weight_row {1 0}
+	data GROUP Tk
+	data ID text_data
+	data MASTER {}
+	data TYPE {Tk text}
+}
+widget {Tk scrollbar} _scrollbar_2 {
+	configure -command {< scroll _text_2 yview >}
+	configure -width 10
+	geometry -column 9
+	geometry -columnspan 1
+	geometry -row 1
+	geometry -rowspan 1
+	geometry -sticky ns
+	geometry min_column {201 2}
+	geometry min_row {118 8}
+	geometry pad_column {0 0}
+	geometry pad_row {0 0}
+	geometry resize_column {2 0}
+	geometry resize_row {2 0}
+	geometry weight_column {1 0}
+	geometry weight_row {1 0}
+	data GROUP Tk
+	data ID _scrollbar_2
+	data MASTER {}
+	data TYPE {Tk scrollbar}
+}
+widget {Tk scrollbar} _scrollbar_3 {
+	configure -command {< scroll _text_2 xview >}
+	configure -orient horizontal
+	configure -width 10
+	geometry -column 6
+	geometry -columnspan 3
+	geometry -row 2
+	geometry -rowspan 1
+	geometry -sticky ew
+	geometry min_column {201 2}
+	geometry min_row {118 8}
+	geometry pad_column {0 0}
+	geometry pad_row {0 0}
+	geometry resize_column {2 0}
+	geometry resize_row {2 0}
+	geometry weight_column {1 0}
+	geometry weight_row {1 0}
+	data GROUP Tk
+	data ID _scrollbar_3
+	data MASTER {}
+	data TYPE {Tk scrollbar}
+}
+widget {Tk canvas} _canvas_1 {
+	configure -background #ffffff
+	configure -height 0
+	configure -width 0
+	geometry -column 1
+	geometry -columnspan 5
+	geometry -row 1
+	geometry -rowspan 2
+	geometry -sticky news
+	geometry min_column {201 2}
+	geometry min_row {118 8}
+	geometry pad_column {0 0}
+	geometry pad_row {0 0}
+	geometry resize_column {2 0}
+	geometry resize_row {2 0}
+	geometry weight_column {1 0}
+	geometry weight_row {1 0}
+	data GROUP Tk
+	data ID mol_canvas
+	data MASTER {}
+	data TYPE {Tk canvas}
+}
+widget {Tk entry} _entry_1 {
+	configure -background #ffffff
+	configure -font {helvetica 9}
+	configure -textvariable SDF::current_record
+	configure -width 10
+	geometry -column 4
+	geometry -columnspan 1
+	geometry -row 3
+	geometry -rowspan 1
+	geometry -sticky nsew
+	geometry min_column {201 2}
+	geometry min_row {118 8}
+	geometry pad_column {0 0}
+	geometry pad_row {0 0}
+	geometry resize_column {2 0}
+	geometry resize_row {2 0}
+	geometry weight_column {1 0}
+	geometry weight_row {1 0}
+	data GROUP Tk
+	data ID entry_record
+	data MASTER {}
+	data TYPE {Tk entry}
+}
+widget {Tk button} _button_4 {
+	configure -text Go
+	geometry -column 5
+	geometry -columnspan 1
+	geometry -row 3
+	geometry -rowspan 1
+	geometry -sticky nsew
+	geometry min_column {201 2}
+	geometry min_row {118 8}
+	geometry pad_column {0 0}
+	geometry pad_row {0 0}
+	geometry resize_column {2 0}
+	geometry resize_row {2 0}
+	geometry weight_column {1 0}
+	geometry weight_row {1 0}
+	data GROUP Tk
+	data ID _button_go
+	data MASTER {}
+	data TYPE {Tk button}
+}
+widget {Tk label} _label_4 {
+	configure -anchor e
+	configure -font {helvetica 8}
+	configure -text Record:
+	geometry -column 3
+	geometry -columnspan 1
+	geometry -row 3
+	geometry -rowspan 1
+	geometry -sticky nsew
+	geometry min_column {201 2}
+	geometry min_row {118 8}
+	geometry pad_column {0 0}
+	geometry pad_row {0 0}
+	geometry resize_column {2 0}
+	geometry resize_row {2 0}
+	geometry weight_column {1 0}
+	geometry weight_row {1 0}
+	data GROUP Tk
+	data ID _label_4
+	data MASTER {}
+	data TYPE {Tk label}
+}
+widget {Tk button} _button_3 {
+	configure -state disabled
+	configure -text STOP
+	geometry -column 8
+	geometry -columnspan 2
+	geometry -row 3
+	geometry -rowspan 1
+	geometry -sticky nsew
+	geometry min_column {201 2}
+	geometry min_row {118 8}
+	geometry pad_column {0 0}
+	geometry pad_row {0 0}
+	geometry resize_column {2 0}
+	geometry resize_row {2 0}
+	geometry weight_column {1 0}
+	geometry weight_row {1 0}
+	data GROUP Tk
+	data ID _button_stop
+	data MASTER {}
+	data TYPE {Tk button}
+}
+widget {Tk button} _button_5 {
+	configure -text Search
+	geometry -column 6
+	geometry -columnspan 1
+	geometry -row 3
+	geometry -rowspan 1
+	geometry -sticky {}
+	data GROUP Tk
+	data ID _button_search
+	data MASTER {}
+	data TYPE {Tk button}
+}
+menu {Menu menu} MENU {
+	data MASTER {}
+	data level 0
+}
+menu {Menu cascade} menuitem1 {
+	configure -label File
+	configure -underline 0
+	data MASTER MENU
+}
+menu {Menu command} menuitem2 {
+	configure -accelerator Ctrl+o
+	configure -command SDF::open_SDF
+	configure -label {Open SDF}
+	configure -underline 0
+	data MASTER menuitem1
+}
+menu {Menu command} menuitem3 {
+	configure -accelerator Ctr+d
+	configure -command SDF::open_db
+	configure -label {Open database}
+	configure -underline 5
+	data MASTER menuitem1
+}
+menu {Menu command} menuitem4 {
+	configure -accelerator Ctrl+s
+	configure -command SDF::save_db
+	configure -label {Save database}
+	data MASTER menuitem1
+}
+
